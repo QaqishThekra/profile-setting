@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="testt2.css">
+
+        <script type="text/javascript">
+            function Toggle(value){
+                switch(value){
+                    case 'General':
+                    document.getElementById('General').style.display="block";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Password':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display=" block";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="none";
+        
+                    break;
+                    case 'Info':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="block";
+                    document.getElementById('Notification').style.display="none";
+                    break;
+                    case 'Notification':
+                    document.getElementById('General').style.display="none";
+                    document.getElementById('Password').style.display="none";
+                    document.getElementById('Info').style.display="none";
+                    document.getElementById('Notification').style.display="block";
+                    break;
+                }
+            }
+            </script>
+
+    </head>
+    <body>
+        <div class ="b2">
+        <div class="accSet">Look To Speak </div>
+        <div class="all">
+            <div id="option"> 
+                <div class="type" onclick="Toggle('General')">Personal Information</div>
+                <div class="type" onclick="Toggle('Password')">Change Password</div>
+                <div class="type" onclick="Toggle('Info')" >Info</div>
+                <div class="type" onclick="Toggle('Notification')">Notifications</div>
+            </div>
+
+
+                <div style="float:left; margin-left: 10px;" id="General" >
+                        <div class="div2">
+
+
+                            <div style="overflow: hidden;">
+                                <div style="float:left;"><img src="avatar.PNG" id ="img"/></div>
+                                <div style="float: left;">
+                                <div style="float: left;"><input type ="button" class="upload" value="Upload New Photo" /></div>
+                                <button class="reset">reset</button>
+                                <div style="clear: left; margin-left: 30px;"><span>Allowed JPG,GIF or PNG. Max size of 800K</span></div>
+                            </div>
+                            </div>
+
+
+
+                            <div class="divbox">
+                                <label class="labell">Username</label>
+                                <div><input type ="text" class="textboxx" maxlength="20" minlength="5" required pattern="[0-9]" ></div>
+                            </div>
+                            <div class="divbox">
+                                <label class="labell">Name</label>
+                                <div><input type ="text" class="textboxx"></div>
+                            </div>
+                            <div class="divbox">
+                                <label class="labell">Email</label>
+                                <div><input type ="text" class="textboxx"></div>
+                            </div>
+                            <div id="confirmed">
+                                <div style="margin: 10px;">Your Email is not confirmed. Please check your inbox</div>
+                                <div style="margin: 10px;"> <a href="">Resend confirmation</a></div>
+                            </div>
+                            <div class="divbox">
+                                <label class="labell">Company</label>
+                                <div><input type ="text" class="textboxx"></div>
+                            </div>
+                            <div class="save_cancel">
+                                <button class="Save">Save changes</button>
+                                <button class="Cancel">Cancel</button>
+                            </div>
+                        </div>
+                </div>
+        
+
+
+                <div id="Password" style="float:left; margin-left: 10px;display: none;" >
+        
+                    <div class="div2">
+                        <div class="divbox">
+                            <label class="labell">Current Password</label>
+                            <div><input type ="password" class="textboxx"  ></div>
+                        </div>
+                        <div class="divbox">
+                            <label class="labell">New Password</label>
+                            <div><input type ="password" class="textboxx"></div>
+                        </div>
+                        <div class="divbox">
+                            <label class="labell">Repeat New Password</label>
+                            <div><input type ="password" class="textboxx"></div>
+                        </div>
+                            <div class="save_cancel">
+                                <button class="Save">Save changes</button>
+                                <button class="Cancel">Cancel</button>
+                            </div>
+                    </div>
+
+        
+                </div>
+<div id="Info" style="display: none;" >
+    <div class="div2">
+        <div class="divbox">
+            <label class="labell">Bio</label>
+            <div><input type ="text" class="textboxx" ></div>
+        </div>
+        <div class="divbox">
+            <label class="labell">Birth Date</label>
+            <div><input type ="date" class="textboxx" ></div>
+        </div>
+        <div class="divbox">
+            <label class="labell">Country</label>
+            <div class="textboxx"><select class="textboxx">
+                <option>USA</option>
+                <option>Jordan</option>
+            </select></div>
+        </div>
+        <div class="Con">Contacts</div>
+        <div class="divbox">
+            <label class="labell">Phone</label>
+            <div><input type ="text" class="textboxx"  required pattern="[0-9]"{10}></div>
+        </div>
+        <div class="divbox">
+            <label class="labell">Website</label>
+            <div><input type ="text" class="textboxx" required pattern=""></div>
+        </div>
+            <div class="save_cancel">
+                <button class="Save">Save changes</button>
+                <button class="Cancel">Cancel</button>
+            </div>
+    </div>
+
+
+</div>
+
+<div id="Notification" style="display: none;" >
+    <div class="LL">Activity</div>
+    <div>
+        <div class="check"><input type="checkbox"/>Email me when someone comments on my article</div>
+        <div class="check"><input type="checkbox"/>Email me when someone answers on my forum thread</div>
+        <div class="check"><input type="checkbox"/>Email me when someone follows me</div>
+    </div>
+    <div class="LL">Application</div>
+    <div>
+        <div class="check"><input type="checkbox"/>News and announcements</div>
+        <div class="check"><input type="checkbox"/>weekly product updates</div>
+        <div class="check"><input type="checkbox"/>Weekly blog digest</div>
+    </div>
+        <button class="Save">Save changes</button>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,161 @@
+body{
+    background-color: #EEEE;
+}
+
+.type {
+    border-bottom: solid #E6ECF3 0.5px;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color:grey;
+
+}
+.labell{
+    font-size: 19px;
+}
+.textboxx{
+    width: 540px;
+    height: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #555555;
+}
+.textboxx:focus{
+    border:#66afe9 solid;
+    outline: 0;
+}
+.Cancel{
+    float: left;
+    margin-left: 10px;
+    padding-top: 10px;
+    color: #333333;
+    background-color: #ffffff;
+    border: #cccccc solid ;
+    width: 65px;
+    height: 10px;
+    border-radius: 4px;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.Save{
+    float: left;
+    margin-left: 320px;
+    padding-top: 10px;
+    background-color: #428bca;
+    border-radius: 4px;
+    padding-bottom: 20px;
+    height: 10px;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+.save_cancel{
+    margin-top: 20px;
+}
+.divbox{
+    margin-top: 16px;
+}
+#confirmed{
+    background-color: #FFF3CD;
+    margin-top: 10px;
+    padding:10px;
+    width: 530px;
+}
+.accSet{
+    height: 40px;
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.all{
+    border:black solid 0.5px;
+    height: 600px; width: 1200px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#option{
+    float: left;
+    width: 450px;
+}
+.div2{
+    float:left;
+    width: 700px;
+    height: 110px;
+    margin: 20px;
+}
+#img{
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+}
+.upload{
+
+    margin-left: 30px;
+    margin-top: 10px;
+    background-color: #428bca;
+    color: #ffffff;
+    height:45px;
+    padding-top: 12px;
+    width: 200px;
+    text-align: center;
+    border-radius: 4px;
+    
+}
+.upload:hover{
+    background-color:#3276b1;
+    border-color: #285e8e solid;
+}
+.reset{
+    float: left;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-color: #d9534f;
+    color: #ffffff;
+    height: 55px;
+    padding-top: 10px;
+    width: 60px;
+    text-align: center;
+    border-radius: 4px;
+    border:#d43f3a solid;
+}
+.reset:hover{
+    background-color:#3276b1;
+    border-color: #285e8e solid;
+}
+.b2{
+    background-color: #EEEE;  
+}
+.LL{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 470px;
+    font-weight: bold;
+}
+.check{
+    margin-left: 475px;
+    margin-top: 10px;
+}
+.Con{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Save:hover{
+    background-color:#3276b1;
+    border-color: #285e8e solid;
+}
+.Cancel:hover{
+    background-color:#3276b1;
+    border-color: #285e8e solid;
+}
+.type:hover{
+    background-color: #E6ECF3;
+    
+}
